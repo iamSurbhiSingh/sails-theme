@@ -1,0 +1,49 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.navbar {
+  min-height: 40px;
+  border-radius: 0px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px; }
+  .navbar .navbar-brand {
+    height: 40px;
+    font-size: 18px;
+    line-height: 20px;
+    background-color: #2c343b;
+    color: #fff;
+    padding: 0px;
+    line-height: 40px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    width: 220px;
+    text-align: center; }
+  .navbar .navbar-nav > li > a {
+    padding: 10px 15px; }
+  .navbar .top-navbar:first-child > li {
+    border-right: 1px solid rgba(0, 0, 0, 0.05); }
+
+.sidebar-container {
+  width: 220px;
+  min-height: 100%;
+  position: absolute;
+  top: 0px;
+  padding-top: 40px;
+  z-index: 4 !important; }
+  .sidebar-container .mainnav-wrap {
+    background: #2c3e50;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+    .sidebar-container .mainnav-wrap .profile-main {
+      min-height: 367px; }
+      .sidebar-container .mainnav-wrap .profile-main .profile-wrap {
+        padding: 30px 20px 12px; }
+        .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a {
+          text-decoration: none; }
+      .sidebar-container .mainnav-wrap .profile-main .profile-avatar .label, .sidebar-container .mainnav-wrap .profile-main .profile-avatar .label-success {
+        border-radius: 0px;
+        background: #7ccc63; }

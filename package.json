@@ -1,0 +1,25 @@
+{
+  "name": "sails-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamSurbhiSingh/sails-theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamSurbhiSingh/sails-theme/issues"
+  },
+  "homepage": "https://github.com/iamSurbhiSingh/sails-theme#readme",
+  "description": ""
+}
