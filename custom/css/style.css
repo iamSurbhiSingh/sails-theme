@@ -39,11 +39,30 @@ body {
     width: 100%;
     position: absolute; }
     .sidebar-container .mainnav-wrap .profile-main {
-      min-height: 367px; }
+      min-height: 100px; }
       .sidebar-container .mainnav-wrap .profile-main .profile-wrap {
         padding: 30px 20px 12px; }
-        .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a {
-          text-decoration: none; }
+        .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name {
+          padding-top: 15px; }
+          .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a {
+            text-decoration: none; }
+            .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a .sidebar-username {
+              font-size: 1.1em;
+              font-weight: 600;
+              color: #fff;
+              margin-bottom: 0px; }
+            .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a .zmdi {
+              color: #fff;
+              font-size: 1.5em; }
+            .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a .emp-email {
+              color: #fff;
+              letter-spacing: 0.02em;
+              font-weight: 300;
+              font-size: 13px; }
       .sidebar-container .mainnav-wrap .profile-main .profile-avatar .label, .sidebar-container .mainnav-wrap .profile-main .profile-avatar .label-success {
         border-radius: 0px;
         background: #7ccc63; }
+    .sidebar-container .mainnav-wrap .profile-icon {
+      margin-bottom: 10px;
+      margin-top: 10px;
+      max-height: 1.7em; }
