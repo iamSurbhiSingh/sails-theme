@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="vendor/css/material-design-color-palette.min.css">
 	<link rel="stylesheet" href="custom/css/style.css">
 	<script type="text/javascript" src="vendor/js/jquery.min.js"></script>
-	<script type="text/javascript" src="vendor/jsbootstrap.min.js"></script>
+	<script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+	<script src="custom/js/custom.js"></script>
 </head>
 <body>
 	<!-- ======================= top navbar =======================  -->	
@@ -29,7 +30,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      	<ul class="nav navbar-nav top-navbar">
 		        	<li>
-		        		<a href=""><i class="zmdi zmdi-menu zmdi-hc-lg"></i></a>
+		        		<a href="" data-status="expanded" class="jq-menu-collapse"><i class="zmdi zmdi-menu zmdi-hc-lg"></i></a>
 		        	</li>
 		        	<li>
 		        		<a href=""><i class="zmdi zmdi-notifications-add zmdi-hc-lg mdc-text-red"></i></a>
@@ -78,22 +79,22 @@
 			<!-- ================== icons ============== -->
 			<div class="profile-icon">
 				<ul class="list-unstyled">
-					<li class="col-md-3"  data-content="My Profile" data-original-title="" title="">
+					<li class="col-md-3 jq-collapse-icon">
 						<a href="#">
 							<i class="zmdi zmdi-comment-alt-text zmdi-hc-lg"></i>
 						</a>
 					</li>
-					<li class="col-md-3">
+					<li class="col-md-3 jq-collapse-icon">
 						<a href="#">
 							<i class="zmdi zmdi-account-o zmdi-hc-lg"></i>
 						</a>
 					</li>
-					<li class="col-md-3">
+					<li class="col-md-3 jq-collapse-icon">
 						<a href="">
 							<i class="zmdi zmdi-flash zmdi-hc-lg"></i>
 						</a>
 					</li>
-					<li class="col-md-3">
+					<li class="col-md-3 jq-collapse-icon">
 						<a href="">
 							<i class="zmdi zmdi-lock-outline zmdi-hc-lg"></i>
 						</a>
@@ -104,26 +105,45 @@
 			<div class="clearfix"></div>
 			<ul class="list-group" id="mainnav-menu">
 				<li class="menu-title">Navigation</li>
-				<li class="active-link">
+				<li class="active-link jq-collapse-icon">
 					<a href="">
 						<i class="zmdi zmdi-home zmdi-hc-lg"></i>
-						<span class="menu-heading">Dashboard</span>
+						<span class="menu-heading jq-srink">Dashboard</span>
 					</a>
 				</li>
-				<li>
+				<li class="jq-collapse-icon">
 					<a href="">
 						<i class="zmdi zmdi-view-web zmdi-hc-lg"></i>
-						<span class="menu-heading">Layout</span>
+						<span class="menu-heading jq-srink">Layout</span>
 					</a>
 				</li>
-				<li>
+				<li class="jq-collapse-icon">
 					<a href="">
 						<i class="zmdi zmdi-widgets zmdi-hc-lg"></i>
-						<span class="menu-heading">Widgets</span>
+						<span class="menu-heading jq-srink">Widgets</span>
 					</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
+
+	<!-- =========================== main body ====================== -->
+	<div class="main-body">
+		<div class="body-wrapper">
+			<!-- =================== page heading ==================== -->
+			<div class="page-heading">
+				<h1 class="top-heading text-overflow">Dashboard</h1>
+				<div class="search">
+					<div class="input-group custom-search-form">
+				      	<input type="text" class="form-control" placeholder="Search">
+				      	<span class="input-group-btn">
+				        	<button class="text-muted"><i class="zmdi zmdi-search zmdi-hc-lg"></i></button>
+				      	</span>
+				    </div>
+				</div>
+			</div>
+			<!-- =============== end ================== -->
+		</div>
+	</div>
 </body>
 </html>
