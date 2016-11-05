@@ -3,6 +3,12 @@ body {
   width: 100%;
   height: 100%; }
 
+.nopadding {
+  padding: 0px; }
+
+.nomargin {
+  margin: 0px; }
+
 .navbar {
   min-height: 40px;
   border-radius: 0px;
@@ -153,3 +159,99 @@ body {
           left: -28px;
           font-size: 14px;
           z-index: 2; }
+
+.body-content {
+  padding: 15px 15px; }
+  .body-content .custom-shail-panel {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12); }
+    .body-content .custom-shail-panel .panel-heading {
+      position: relative;
+      height: 50px;
+      padding: 0;
+      color: #2b425b;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
+      .body-content .custom-shail-panel .panel-heading .control-panel {
+        height: 100%;
+        position: relative;
+        float: right;
+        padding: 0 15px; }
+    .body-content .custom-shail-panel .control-btn {
+      background: transparent;
+      padding: 6px 7px;
+      box-shadow: none;
+      font-size: 13px;
+      cursor: pointer;
+      border-radius: 0;
+      border: 1px solid transparent;
+      line-height: 1.42857;
+      vertical-align: middle;
+      transition: all .25s;
+      height: 100%; }
+    .body-content .custom-shail-panel .chart-heading {
+      font-weight: 600;
+      padding: 0 20px 0 20px;
+      font-size: 1.2em;
+      line-height: 50px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0px; }
+
+.panel-pagination ul {
+  margin: 0; }
+
+.card {
+  width: 100%;
+  max-height: 100%;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  border-radius: 4px; }
+
+.card_layout {
+  background: #fff; }
+  .card_layout .card-head {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #52616d;
+    margin: 5px 0px 0px 0px;
+    padding: 0px 0px 0px 10px; }
+  .card_layout .card_text {
+    font-weight: 400;
+    font-size: 0.9em;
+    color: #bdc3c7;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0px 0px 8px 10px; }
+
+.card_button {
+  position: relative;
+  float: right;
+  margin-top: -30px; }
+  .card_button .btn_share {
+    position: absolute;
+    top: 0;
+    background: #ff4081;
+    width: 50px;
+    height: 50px;
+    right: 5px;
+    border-radius: 50%;
+    text-align: center;
+    display: table;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
+    .card_button .btn_share:hover {
+      transform: scale(1.1);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
+  .card_button .btn-share:before {
+    color: #fff;
+    content: "\f35b";
+    font-family: 'Material-Design-Iconic-Font';
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.5em;
+    font-weight: 600; }
+
+.card-teal {
+  background: #009688;
+  width: 100%;
+  height: 200px; }
