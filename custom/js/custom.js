@@ -23,4 +23,5 @@ $(function(){
 			self.attr('data-status','expanded');
 		}
 	});
+	$('.collapsible').collapsible();
 });

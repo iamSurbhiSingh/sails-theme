@@ -11,6 +11,9 @@ body {
 .nomargin {
 	margin: 0px;
 }
+.padding-all {
+	padding: 15px;
+}
 // .zmdi-menu:hover {
 // 	transition: all 200ms ease;
 // 	 transform: rotate(180deg);
@@ -33,7 +36,7 @@ body {
 	    padding: 0px;
 	    line-height: 40px;
 	    position: relative;
-	    z-index: 2;
+	    z-index: 6;
 	    overflow: hidden;
 	    width: 220px;
 	    text-align: center;
@@ -49,10 +52,22 @@ body {
 .sidebar-container {
 	width: 220px;
 	min-height: 100%;
-	position: absolute;
+	// position: absolute;
 	top: 0px;
-	padding-top: 40px;
+	// padding-top: 40px;
 	z-index: 4!important;
+	position: fixed;
+    // top: 51px;
+    left: 220px;
+    // width: 225px;
+    margin-left: -220px;
+    border: none;
+    border-radius: 0;
+    overflow-y: hidden;
+    // background-color: #222;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
 	.mainnav-wrap {
 		background: #2c3e50;
 		height: 100%;
@@ -63,7 +78,7 @@ body {
 		.profile-main {
 			min-height: 100px;
 			.profile-wrap {
-				padding: 30px 20px 12px;
+				padding: 60px 20px 12px;
 				.user-name {
 					padding-top: 15px;
 					a {
@@ -148,7 +163,7 @@ body {
 .main-body {
 	background: #d6d6d6;
 	width: 100%;
-	height: 600px;
+	// height: 600px;
 	.body-wrapper {
 		padding-left: 220px;
 		width: 100%;
@@ -290,7 +305,7 @@ body {
 	.btn_share {
 		position: absolute;
 		top: 0;
-		background: #ff4081;
+		background: #E64A19;
 		width: 50px;
 		height: 50px;
 		right: 5px;
@@ -321,13 +336,140 @@ body {
 	background: #009688;
 	width: 100%;
 	height: 200px;
+	color: #fff;
+	.padding-all {
+		.text-heading {
+			font-size: 1.2em;
+			font-weight: 300;
+			line-height: 1.25;
+		}
+		.progress-bar-text {
+			font-size: 13px;
+			color: #fff;
+			font-weight: 400;
+		}
+	}
+}
+.progress-sm {
+	height: 8px;
+	border-radius: 0;
+	background: rgba(0,0,0,0.1);
+	.progress-bg {
+		background: #fff;
+	}
+}
+
+// =============== to do list ====================
+.to-do-list {
+	width: 100%;
+	border-color: #ddd;
+	border: 1px solid transparent;
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	border-radius: 2px;
+	.todo-heading {
+		padding: 10px 15px;
+		border-color: #ddd;
+		border-bottom: 1px solid rgba(0,0,0,0.08);
+	}
+	.todo-body {
+		padding: 15px;
+		.list-group {
+			.sail-list-group {
+				border-color: transparent;
+				.custom-checkbox {
+					position: absolute;
+					display: none;
+					background: none;
+				}
+				.task-status {
+					font-weight: 600;
+					font-size: 12px;
+					vertical-align: middle;
+				}	
+				p {
+					font-weight: 300;
+					font-size: 12px;
+					padding-top: 6px;
+					margin: 0px;
+				}	
+			}
+		}
+	}
+}
+.to-do-default {
+	background: #fff;
 }
 
 
+.custom-checkbox+label:not(:empty) {
+    padding: 0 21px!important;
+}
+.custom-checkbox+label {
+    min-width: 16px;
+    min-height: 16px;
+}
+.custom-checkbox+label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 0;
+}
+ 
+.custom-checkbox+label:before {
+    border-radius: 0;
+}
+.custom-checkbox+label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    content: "\f26b";
+    font-family: 'Material-Design-Iconic-Font';
+    border: 1px solid #e0e0e0;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.custom-checkbox:checked+label:before {
+    border: #42a5f5;
+    background: #42a5f5;
+}
+.custom-checkbox:checked+label:before {
+    animation-name: none;
+}
 
+// ============== add task ================
+.add-task {
+	.form-group {
+		margin-bottom: 7px;
+		.form-control {
+			border-radius: 0px;
+			border-color: #ddd;
+		}
+		.form-title {
+			height: 30px;
+		}
+	}
+	.btn-success {
+		border-radius: 0px;
+	}
+	input, textarea,
+input::-webkit-input-placeholder {
+	font-size: 10px;
+}
+}
 
-
-
+// =================== card login =============
+.orange-card {
+	width:100%;
+	height: 200px;
+	background: #FF5722;
+	border-radius: 4px;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.3);
+}
 
 
 

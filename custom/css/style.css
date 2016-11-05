@@ -9,6 +9,9 @@ body {
 .nomargin {
   margin: 0px; }
 
+.padding-all {
+  padding: 15px; }
+
 .navbar {
   min-height: 40px;
   border-radius: 0px;
@@ -26,7 +29,7 @@ body {
     padding: 0px;
     line-height: 40px;
     position: relative;
-    z-index: 2;
+    z-index: 6;
     overflow: hidden;
     width: 220px;
     text-align: center; }
@@ -38,10 +41,17 @@ body {
 .sidebar-container {
   width: 220px;
   min-height: 100%;
-  position: absolute;
   top: 0px;
-  padding-top: 40px;
-  z-index: 4 !important; }
+  z-index: 4 !important;
+  position: fixed;
+  left: 220px;
+  margin-left: -220px;
+  border: none;
+  border-radius: 0;
+  overflow-y: hidden;
+  bottom: 0;
+  overflow-x: hidden;
+  padding-bottom: 40px; }
   .sidebar-container .mainnav-wrap {
     background: #2c3e50;
     height: 100%;
@@ -50,7 +60,7 @@ body {
     .sidebar-container .mainnav-wrap .profile-main {
       min-height: 100px; }
       .sidebar-container .mainnav-wrap .profile-main .profile-wrap {
-        padding: 30px 20px 12px; }
+        padding: 60px 20px 12px; }
         .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name {
           padding-top: 15px; }
           .sidebar-container .mainnav-wrap .profile-main .profile-wrap .user-name a {
@@ -112,8 +122,7 @@ body {
 
 .main-body {
   background: #d6d6d6;
-  width: 100%;
-  height: 600px; }
+  width: 100%; }
   .main-body .body-wrapper {
     padding-left: 220px;
     width: 100%;
@@ -231,7 +240,7 @@ body {
   .card_button .btn_share {
     position: absolute;
     top: 0;
-    background: #ff4081;
+    background: #E64A19;
     width: 50px;
     height: 50px;
     right: 5px;
@@ -254,4 +263,111 @@ body {
 .card-teal {
   background: #009688;
   width: 100%;
-  height: 200px; }
+  height: 200px;
+  color: #fff; }
+  .card-teal .padding-all .text-heading {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.25; }
+  .card-teal .padding-all .progress-bar-text {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 400; }
+
+.progress-sm {
+  height: 8px;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1); }
+  .progress-sm .progress-bg {
+    background: #fff; }
+
+.to-do-list {
+  width: 100%;
+  border-color: #ddd;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 2px; }
+  .to-do-list .todo-heading {
+    padding: 10px 15px;
+    border-color: #ddd;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+  .to-do-list .todo-body {
+    padding: 15px; }
+    .to-do-list .todo-body .list-group .sail-list-group {
+      border-color: transparent; }
+      .to-do-list .todo-body .list-group .sail-list-group .custom-checkbox {
+        position: absolute;
+        display: none;
+        background: none; }
+      .to-do-list .todo-body .list-group .sail-list-group .task-status {
+        font-weight: 600;
+        font-size: 12px;
+        vertical-align: middle; }
+      .to-do-list .todo-body .list-group .sail-list-group p {
+        font-weight: 300;
+        font-size: 12px;
+        padding-top: 6px;
+        margin: 0px; }
+
+.to-do-default {
+  background: #fff; }
+
+.custom-checkbox + label:not(:empty) {
+  padding: 0 21px !important; }
+
+.custom-checkbox + label {
+  min-width: 16px;
+  min-height: 16px; }
+
+.custom-checkbox + label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0; }
+
+.custom-checkbox + label:before {
+  border-radius: 0; }
+
+.custom-checkbox + label:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  content: "\f26b";
+  font-family: 'Material-Design-Iconic-Font';
+  border: 1px solid #e0e0e0;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle; }
+
+.custom-checkbox:checked + label:before {
+  border: #42a5f5;
+  background: #42a5f5; }
+
+.custom-checkbox:checked + label:before {
+  animation-name: none; }
+
+.add-task .form-group {
+  margin-bottom: 7px; }
+  .add-task .form-group .form-control {
+    border-radius: 0px;
+    border-color: #ddd; }
+  .add-task .form-group .form-title {
+    height: 30px; }
+
+.add-task .btn-success {
+  border-radius: 0px; }
+
+.add-task input, .add-task textarea,
+.add-task input::-webkit-input-placeholder {
+  font-size: 10px; }
+
+.orange-card {
+  width: 100%;
+  height: 200px;
+  background: #FF5722;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
