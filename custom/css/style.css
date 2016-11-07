@@ -365,9 +365,15 @@ body {
 .add-task input::-webkit-input-placeholder {
   font-size: 10px; }
 
+.stroke {
+  text-decoration: line-through; }
+
 .orange-card {
   width: 100%;
   height: 200px;
   background: #FF5722;
   border-radius: 4px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
+
+.table-wraper {
+  margin: 15px 0px; }

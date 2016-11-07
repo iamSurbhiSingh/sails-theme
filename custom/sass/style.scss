@@ -461,7 +461,9 @@ input::-webkit-input-placeholder {
 	font-size: 10px;
 }
 }
-
+.stroke {
+	text-decoration: line-through;
+}
 // =================== card login =============
 .orange-card {
 	width:100%;
@@ -472,7 +474,10 @@ input::-webkit-input-placeholder {
 }
 
 
-
+// ======================== table ===========================
+.table-wraper {
+	margin: 15px 0px;
+}
 
 
 

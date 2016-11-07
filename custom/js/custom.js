@@ -23,5 +23,8 @@ $(function(){
 			self.attr('data-status','expanded');
 		}
 	});
-	$('.collapsible').collapsible();
+	// $('.collapsible').collapsible(); stroke   $("ul li:nth-child(1)").toggleClass('stroked');
+	$('.custom-checkbox').click(function(){
+		$('.task-status').toggleClass('stroke');
+	});
 });
