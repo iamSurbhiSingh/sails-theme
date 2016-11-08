@@ -1,4 +1,4 @@
-// @import '_variable';
+ @import 'variable';
 body {
 	// font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Open Sans', sans-serif;
@@ -478,7 +478,14 @@ input::-webkit-input-placeholder {
 .table-wraper {
 	margin: 15px 0px;
 }
-
+.btn-purpel {
+	background: #9C27B0;
+	border-color: #9C27B0;
+	/*color: #fff;*/
+	font-size: 13px;
+	font-weight: 400;
+	border-radius: 0px;
+}
 
 
 
