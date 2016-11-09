@@ -407,19 +407,20 @@ body {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3); }
 
 /*// ======================== table ===========================*/
-.table-wraper {
-  margin: 15px 0px; }
-  .table-wraper .panel-heading {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
-  .table-wraper i {
-    color: #999; }
-  .table-wraper .pad-bot {
-    padding-bottom: 15px; }
-  .table-wraper .table > thead > tr > th {
-    font-size: 1.05em;
-    font-weight: 600;
-    border-bottom: 1px solid #e9e9e9;
-    color: #2b425b; }
+.table-wraper .panel-heading {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
+
+.table-wraper i {
+  color: #999; }
+
+.table-wraper .pad-bot {
+  padding-bottom: 15px; }
+
+.table-wraper .table > thead > tr > th {
+  font-size: 1.05em;
+  font-weight: 600;
+  border-bottom: 1px solid #e9e9e9;
+  color: #2b425b; }
 
 .btn-purple {
   background: #9C27B0;
@@ -473,7 +474,7 @@ body {
   .basic-buttons .panel-heading {
     border-bottom: 1px solid #ddd; }
   .basic-buttons .panel-body {
-    padding: 15px 20px 25px; }
+    padding: 15px 20px 5px; }
 
 .basic-btn .btn {
   min-width: 17.5%;
@@ -561,3 +562,21 @@ button, button:focus, button:active {
     font-size: 1.333em;
     line-height: 1.095em;
     vertical-align: middle; }
+
+.btn-circle {
+  padding: 9px;
+  border-radius: 50% !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
+  .btn-circle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16); }
+
+.btn-icon .btn-circle > i {
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4; }
+
+.btn-icon > i {
+  display: inline-block;
+  min-width: 1.05em; }

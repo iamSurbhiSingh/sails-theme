@@ -479,7 +479,6 @@ input::-webkit-input-placeholder {
 
 /*// ======================== table ===========================*/
 .table-wraper {
-	margin: 15px 0px;
 	.panel-heading {
 		border-bottom:  1px solid rgba(0,0,0,0.07);
 	}
@@ -558,7 +557,7 @@ input::-webkit-input-placeholder {
 		border-bottom: 1px solid #ddd;
 	}
 	.panel-body	{
-		padding: 15px 20px 25px;
+		padding: 15px 20px 5px;
 
 	}
 }
@@ -660,11 +659,27 @@ button, button:focus, button:active {
 	    vertical-align: middle;
 	}
 }
+.btn-circle {
+	padding: 9px;
+	border-radius: 50% !important;
+	box-shadow: 0 2px 4px rgba(0,0,0, 0.12), 0 2px 4px rgba(0,0,0, 0.24);
+		
+		&:hover {
+			transform: scale(1.1);
+			box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16)
+		}
+}
+.btn-icon .btn-circle > i {
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    line-height: 1.4;
+}
 
-
-
-
-
+.btn-icon > i {
+    display: inline-block;
+    min-width: 1.05em;
+}
 
 
 
