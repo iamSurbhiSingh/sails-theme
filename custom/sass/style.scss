@@ -572,7 +572,6 @@ input::-webkit-input-placeholder {
 /*default*/
 .btn-default {
 	/*box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);*/
-	border-radius: 0px;
 	background-color: #e8e8e8;
     border-color: #d1d9de;
     color: #758697;
@@ -583,6 +582,10 @@ input::-webkit-input-placeholder {
 	background: #F44336;
 	color: #fff;
 	border-color: #F44336;
+	&:hover, &:focus, &:active {
+		background: darken(#F44336, 10%);
+		color: #fff;
+	}
 }
 .btn-pink {
 	background: #E91E63;
@@ -621,10 +624,19 @@ input::-webkit-input-placeholder {
 	color: #fff;
 }
 
-
-
-
-
+/*================ rounded button =================*/
+.rounded-btn {
+	.btn {
+		border-radius: 17px !important;
+		overflow: hidden;
+	}
+}
+.rounded-heading {
+	padding: 15px 0px;
+}
+button, button:focus, button:active {
+	outline: 0px !important;
+}
 
 
 
