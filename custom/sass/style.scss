@@ -14,6 +14,9 @@ body {
 .padding-all {
 	padding: 15px;
 }
+.nopadding-left {
+	padding-left: 0px;
+}
 /*// .zmdi-menu:hover {
 // 	transition: all 200ms ease;
 // 	 transform: rotate(180deg);
@@ -547,4 +550,88 @@ input::-webkit-input-placeholder {
 		background: #03A9F4;
 	}
 }
+
+/*========================== custom buttons ============================== */
+.basic-buttons {
+	border-radius: 0px;
+	.panel-heading {
+		border-bottom: 1px solid #ddd;
+	}
+	.panel-body	{
+		padding: 15px 20px 25px;
+
+	}
+}
+.panel-element-wrap {
+	.btn {
+		min-width: 17.5%;
+		margin: 7px 7px 7px 0;
+		border-radius: 0px;
+	}
+}
+/*default*/
+.btn-default {
+	/*box-shadow: 0 3px 10px rgba(0,0,0,0.23),0 3px 10px rgba(0,0,0,0.16);*/
+	border-radius: 0px;
+	background-color: #e8e8e8;
+    border-color: #d1d9de;
+    color: #758697;
+
+}
+/*= red======= */
+.btn-red {
+	background: #F44336;
+	color: #fff;
+	border-color: #F44336;
+}
+.btn-pink {
+	background: #E91E63;
+	border-color: #E91E63;
+	color: #fff;
+}
+.btn-orange {
+	background: #FF9800;
+	border-color: #FF9800;
+	color: #fff;
+}
+
+.btn-teal {
+	background: #009688;
+	border-color: #009688;
+	color: #fff;
+}
+.btn-green {
+	background: #4CAF50;
+	border-color: #4CAF50;
+	color: #fff;
+}
+.btn-lime {
+	background: #CDDC39;
+	border-color: #CDDC39;
+	color: #fff;
+}
+.btn-blue {
+	background: #3F51B5;
+	border-color: #3F51B5;
+	color: #fff;
+}
+.btn-cyan {
+	background: #00BCD4;
+	border-color: #00BCD4;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
