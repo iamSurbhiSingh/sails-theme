@@ -475,7 +475,7 @@ body {
   .basic-buttons .panel-body {
     padding: 15px 20px 25px; }
 
-.panel-element-wrap .btn {
+.basic-btn .btn {
   min-width: 17.5%;
   margin: 7px 7px 7px 0;
   border-radius: 0px; }
@@ -533,6 +533,11 @@ body {
 
 /*================ rounded button =================*/
 .rounded-btn .btn {
+  min-width: 17.5%;
+  margin: 7px 7px 7px 0;
+  border-radius: 0px; }
+
+.btn-round {
   border-radius: 17px !important;
   overflow: hidden; }
 
@@ -541,3 +546,18 @@ body {
 
 button, button:focus, button:active {
   outline: 0px !important; }
+
+/*================== button icon ================== */
+.icon-btn {
+  padding-left: 9px;
+  padding-right: 9px; }
+  .icon-btn .btn {
+    margin: 7px 7px 7px 0;
+    border-radius: 0px; }
+  .icon-btn .btn-icon > i {
+    display: inline-block;
+    min-width: 1.05em; }
+  .icon-btn .icon-lg {
+    font-size: 1.333em;
+    line-height: 1.095em;
+    vertical-align: middle; }

@@ -562,7 +562,7 @@ input::-webkit-input-placeholder {
 
 	}
 }
-.panel-element-wrap {
+.basic-btn {
 	.btn {
 		min-width: 17.5%;
 		margin: 7px 7px 7px 0;
@@ -627,9 +627,14 @@ input::-webkit-input-placeholder {
 /*================ rounded button =================*/
 .rounded-btn {
 	.btn {
-		border-radius: 17px !important;
-		overflow: hidden;
+		min-width: 17.5%;
+		margin: 7px 7px 7px 0;
+		border-radius: 0px;
 	}
+}
+.btn-round {
+	border-radius: 17px !important;
+	overflow: hidden;
 }
 .rounded-heading {
 	padding: 15px 0px;
@@ -637,7 +642,24 @@ input::-webkit-input-placeholder {
 button, button:focus, button:active {
 	outline: 0px !important;
 }
-
+/*================== button icon ================== */
+.icon-btn {
+	padding-left: 9px;
+	padding-right: 9px;
+	.btn {
+		margin: 7px 7px 7px 0;
+		border-radius: 0px;
+	}
+	.btn-icon > i {
+	    display: inline-block;
+	    min-width: 1.05em;
+	}
+	.icon-lg {
+	    font-size: 1.333em;
+	    line-height: 1.095em;
+	    vertical-align: middle;
+	}
+}
 
 
 
