@@ -1,4 +1,4 @@
- @import 'variable';
+ /*@import 'variable';*/
 body {
 	// font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Open Sans', sans-serif;
@@ -14,11 +14,11 @@ body {
 .padding-all {
 	padding: 15px;
 }
-// .zmdi-menu:hover {
+/*// .zmdi-menu:hover {
 // 	transition: all 200ms ease;
 // 	 transform: rotate(180deg);
-// }
-// =========== navbar =================
+// }*/
+ /*=========== navbar =================*/
 .navbar {
 	min-height: 40px;
 	border-radius: 0px;
@@ -48,23 +48,23 @@ body {
 		border-right: 1px solid rgba(0,0,0,0.05);
 	}
 }
-// ===================== navbar side bar =========
+/*// ===================== navbar side bar =========*/
 .sidebar-container {
 	width: 220px;
 	min-height: 100%;
-	// position: absolute;
+	/*// position: absolute;*/
 	top: 0px;
-	// padding-top: 40px;
+	/*// padding-top: 40px;*/
 	z-index: 4!important;
 	position: fixed;
-    // top: 51px;
+    /*// top: 51px;*/
     left: 220px;
-    // width: 225px;
+    /*// width: 225px;*/
     margin-left: -220px;
     border: none;
     border-radius: 0;
     overflow-y: hidden;
-    // background-color: #222;
+    /*// background-color: #222;*/
     bottom: 0;
     overflow-x: hidden;
     padding-bottom: 40px;
@@ -73,8 +73,8 @@ body {
 		height: 100%;
 		width: 100%;
 		position: absolute;
-		// opacity: 0.9;
-		// =================== profile main ===========
+		/*// opacity: 0.9;*/
+		/*// =================== profile main ===========*/
 		.profile-main {
 			min-height: 100px;
 			.profile-wrap {
@@ -109,7 +109,7 @@ body {
 				}
 			}
 		}
-		// ================ icons ==================
+		/*// ================ icons ==================*/
 		.profile-icon {
 			margin-bottom: 10px;
 			margin-top: 10px;
@@ -124,7 +124,7 @@ body {
 	}
 }
 
-// ================= sidebar menu ===============
+/*// ================= sidebar menu ===============*/
 .list-group {
 	.menu-title {
 		color: #52616d;
@@ -159,11 +159,11 @@ body {
     box-shadow: inset 2px 0 0 0 #0c80df;
 }
 
-// /================ main body ======================
+/*// /================ main body ======================*/
 .main-body {
 	background: #d6d6d6;
 	width: 100%;
-	// height: 600px;
+	/*// height: 600px;*/
 	.body-wrapper {
 		padding-left: 220px;
 		width: 100%;
@@ -219,11 +219,11 @@ body {
 	}
 }
 
-// ==================== body content ======================
+/*// ==================== body content ======================*/
 // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
 .body-content {
 	padding: 15px 15px;
-	// ============ panel ============
+	/*// ============ panel ============*/
 	.custom-shail-panel {
 		box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
 		.panel-heading {
@@ -269,9 +269,9 @@ body {
 		margin: 0;
 	}
 }
-// ==================== card =====================
+/*// ==================== card =====================
 // 0 2px 4px rgba(0,0,0, 0.12),0 2px 4px rgba(0,0,0, 0.24)
-// box-shadow: 0 3px 6px rgba(0,0,0, 0.12), 0 3px 6px rgba(0,0,0, 0.24);
+// box-shadow: 0 3px 6px rgba(0,0,0, 0.12), 0 3px 6px rgba(0,0,0, 0.24);*/
 .card {
 	width: 100%;
 	max-height: 100%;
@@ -323,7 +323,7 @@ body {
 		color: #fff;
 		content: "\f35b";
 		font-family: 'Material-Design-Iconic-Font';
-		// line-height: 50px;
+		/*// line-height: 50px;*/
 		display: table-cell;
 		vertical-align: middle;
 		font-size: 1.5em;
@@ -331,7 +331,7 @@ body {
 	}
 }
 
-// =============== card teal ==================
+/*// =============== card teal ==================*/
 .card-teal {
 	background: #009688;
 	width: 100%;
@@ -359,7 +359,7 @@ body {
 	}
 }
 
-// =============== to do list ====================
+/*// =============== to do list ====================*/
 .to-do-list {
 	width: 100%;
 	border-color: #ddd;
@@ -441,7 +441,7 @@ body {
     animation-name: none;
 }
 
-// ============== add task ================
+/*// ============== add task ================*/
 .add-task {
 	.form-group {
 		margin-bottom: 7px;
@@ -464,7 +464,7 @@ input::-webkit-input-placeholder {
 .stroke {
 	text-decoration: line-through;
 }
-// =================== card login =============
+/*// =================== card login =============*/
 .orange-card {
 	width:100%;
 	height: 200px;
@@ -474,21 +474,77 @@ input::-webkit-input-placeholder {
 }
 
 
-// ======================== table ===========================
+/*// ======================== table ===========================*/
 .table-wraper {
 	margin: 15px 0px;
+	.panel-heading {
+		border-bottom:  1px solid rgba(0,0,0,0.07);
+	}
+	i {
+		color: #999;
+	}
+	.pad-bot {
+		padding-bottom: 15px;
+	}
+	.table > thead > tr> th{
+		font-size: 1.05em;
+	    font-weight: 600;
+	    border-bottom: 1px solid #e9e9e9;
+	    color: #2b425b;
+	}
 }
-.btn-purpel {
+.btn-purple {
 	background: #9C27B0;
 	border-color: #9C27B0;
-	/*color: #fff;*/
+	color: #fff;
 	font-size: 13px;
 	font-weight: 400;
 	border-radius: 0px;
+	&:hover, &:focus, &:active {
+		background: darker('#9C27B0, 10%');
+		color: #fff;
+		border-color: #9C27B0;
+	}
+	i {
+		color: #fff;
+	}
 }
 
-
-
-
-
+.table-toolbar-right {
+	text-align: right;
+	float: right;
+	i {
+		color: #999;
+	}
+	.form-group {
+		vertical-align: top;
+		display: inline-block;
+		margin: 0px;
+		.form-control {
+			border-radius: 0px;
+			border-color: #c9c9c9;
+		}
+	}
+}
+.table-responsive {
+	.label-table {
+		display: inline-block;
+	    width: 80%;
+	    min-width: 8ex;
+	    font-size: 1em;
+	    max-width: 100px;
+	    font-weight: 400;
+	    padding: 5px;
+	    text-overflow: ellipsis;
+	    overflow: hidden;
+	    vertical-align: top;
+	    border-radius: 0px;
+	}
+	.label-success {
+		background: #8BC34A;
+	}
+	.label-info {
+		background: #03A9F4;
+	}
+}
 
